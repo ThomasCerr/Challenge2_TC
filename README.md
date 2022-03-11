@@ -35,5 +35,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 ## Mockup
 
-<img src= "https://github.com/ThomasCerr/Challenge-2_TC/blob/main/assets/images/example-picture.png">
+<img src= "https://github.com/ThomasCerr/Challenge-2-TC/blob/main/assets/images/example-picture.png">
 
