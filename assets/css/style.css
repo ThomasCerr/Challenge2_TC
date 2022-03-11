@@ -85,6 +85,8 @@ header {
 
 }
 
+/* About me and BIO */
+
 .Intro {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -104,11 +106,11 @@ header {
 
 .Bio {
 flex: 1 1;
-
 }
 
-.Main {
+/* Work and Main Boxes */
 
+.Main {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
@@ -120,27 +122,46 @@ flex: 1 1;
 .Work h2{
 font-size: 2.5em;
 border-bottom: 4px solid var(--primary-color);;
- 
+
 }
+
 .Boxes {
    display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around ;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  height: 550px;
+  width: 100%;
   
 }
 
 .surf {
-    height: 400px;
-    width: 900px;
-    background-image: url("../images/box-image1.webp");
+    height: 55%;
+    display: block;
+  position: relative;
+  width: 100%;
+  margin: 1%;
+
+}
+
+.surf::after {
+    content: "";
+    background-image: url("../images/box-image1.png");
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -10;  
 }
 
 .LED, .Calculator, .Pastel, .Run {
-    height: 100px;
-    width: 450px;
+   
     display: block;
   position: relative;
-
+  margin: 1%; 
+  height: 20%;
+  width: 48%;
 }
 
 .LED::after{
@@ -152,7 +173,7 @@ border-bottom: 4px solid var(--primary-color);;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;  
+    z-index: -10;  
 }
 
 .Calculator::after { 
@@ -164,7 +185,7 @@ border-bottom: 4px solid var(--primary-color);;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;  
+    z-index: -10;  
 }
 
 .Pastel::after { 
@@ -176,7 +197,7 @@ border-bottom: 4px solid var(--primary-color);;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;  
+    z-index: -10;  
 }
 
 .Run::after { 
@@ -188,10 +209,18 @@ border-bottom: 4px solid var(--primary-color);;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;  
+    z-index: -10;  
 }
 
 .break::after {
     flex-basis: 100%;
     height: 0;
+  }
+
+  /* Text boxes in Main boxes */
+
+  .Surf-Box, .LED-Box, .Calculator-Box, .Pastel-Box, .Run-Box {
+position: absolute;
+top: 85%
+
   }
