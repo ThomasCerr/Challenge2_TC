@@ -1,3 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: lightgray
+  }
+
+:root {
+    --primary-color: #386cfc;
+}
+
 
 
 /* NAV */
@@ -11,15 +25,16 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 25;
-    
+
   }
   
   header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
+    Background-color: var(--primary-color);
     color: black;
-    Background-color: aqua;
+    
   }
   
   header a {
@@ -33,12 +48,150 @@ header {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    color: aqua;
+    color: var(--primary-color);
   }
 
   header nav ul li a {
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-weight: lighter;
     font-size: 1vw;
+    text-decoration: underline;
   }
   
+
+  /* Cushion */
+
+.Cushion {
+    background-image: url("../images/Cushion.jpg");
+    width: auto;
+    height: 150px;
+    z-index: 999;
+}
+
+.Subtitle {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: var(--primary-color);
+    left: 1725px;
+    top: 150px;
+}
+
+.Subtitle h2 {
+    font-size: 1.2em;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.Intro {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 300px;
+    
+}
+
+.About-Me {
+ align-items: right;
+ font-size: 1.8em;
+ border-bottom: 4px solid var(--primary-color);;
+}
+
+.Bio {
+flex: 1 1;
+
+}
+
+.Main {
+
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 300px;
+}
+
+.Work h2{
+font-size: 2.5em;
+border-bottom: 4px solid var(--primary-color);;
+ 
+}
+.Boxes {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+  
+}
+
+.surf {
+    height: 400px;
+    width: 900px;
+    background-image: url("../images/box-image1.webp");
+}
+
+.LED, .Calculator, .Pastel, .Run {
+    height: 100px;
+    width: 450px;
+    display: block;
+  position: relative;
+
+}
+
+.LED::after{
+    content: "";
+    background-image: url("../images/box-image2.webp");
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+
+.Calculator::after { 
+    content: "";
+    background-image: url("../images/box-image3.webp");
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+
+.Pastel::after { 
+    content: "";
+    background-image: url("../images/box-image4.jpg");
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+
+.Run::after { 
+    content: "";
+    background-image: url("../images/box-image5.jpg");
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+
+.break::after {
+    flex-basis: 100%;
+    height: 0;
+  }
