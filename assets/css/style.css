@@ -93,8 +93,10 @@ header {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 300px;
+    justify-content: space-between;
+    gap: 30%;
+
+    
     
 }
 
@@ -102,6 +104,15 @@ header {
  align-items: right;
  font-size: 1.8em;
  border-bottom: 4px solid var(--primary-color);;
+}
+
+.Pro-Pic {
+    display: block;
+    position: relative;
+    flex: 1;
+    height: 5%;
+    width: 30%;
+    min-width: 0;
 }
 
 .Bio {
@@ -116,11 +127,11 @@ flex: 1 1;
     width: 80%;
     display: flex;
     justify-content: flex-start;
-    gap: 300px;
+    gap: 30%;
 }
 
 .Work h2{
-font-size: 2.5em;
+font-size: 2.9em;
 border-bottom: 4px solid var(--primary-color);;
 
 }
@@ -224,3 +235,18 @@ position: absolute;
 top: 85%
 
   }
+
+
+  /* Footer */
+  footer {
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-me {
+    font-size: 2.9em;
+}
