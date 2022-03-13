@@ -37,3 +37,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 <img src= "https://github.com/ThomasCerr/Challenge2_TC/blob/master/assets/images/example-picture.png">
 
+Link to deployed application: https://thomascerr.github.io/Challenge2_TC/
+
+
