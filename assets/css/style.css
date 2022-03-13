@@ -79,12 +79,10 @@ header {
     right: 0;
     bottom: 0;
 
-    
-    
 }
 
 .Subtitle h2 {
-    font-size: 1.2em;
+    font-size: 1.0em;
     line-height: 50px;
     text-align: center;
     vertical-align: middle;
