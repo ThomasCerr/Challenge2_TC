@@ -24,7 +24,6 @@ header {
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
-    top: 25;
 
   }
   
@@ -32,8 +31,8 @@ header {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    Background-color: var(--primary-color);
-    color: black;
+    /* Background-color: var(--primary-color); */
+    /* color: white; */
     
   }
   
@@ -96,27 +95,28 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30%;
+    gap: 5%;
     
 }
 
 .About-Me {
- align-items: right;
- font-size: 1.8em;
- border-bottom: 4px solid var(--primary-color);;
+  text-align: right;
+  padding-right: 20px;
+  flex: 0 0 20%;
+  font-size: 2.3em;
+  border-right: 4px solid var(--primary-color);
 }
 
 .Pro-Pic {
-    display: block;
-    position: relative;
-    flex: 1;
-    height: 5%;
-    width: 30%;
-    min-width: 0;
+  flex: 1 40%;
+}
+
+.Pro-Pic > img {
+  width: 100%;
 }
 
 .Bio {
-flex: 1 1;
+  flex: 1;
 }
 
 /* Work and Main Boxes */
@@ -126,19 +126,23 @@ flex: 1 1;
     padding-bottom: 50px;
     width: 80%;
     display: flex;
-    justify-content: flex-start;
-    gap: 30%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
 }
 
-.Work h2{
-font-size: 2.9em;
-border-bottom: 4px solid var(--primary-color);;
+.Work {
+    text-align: right;
+    padding-right: 20px;
+    flex: 0 0 20%;
+    font-size: 2.5em;
+    border-right: 4px solid var(--primary-color);
 
 }
 
 .Boxes {
    display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content:space-evenly;
   height: 550px;
   width: 100%;
@@ -168,7 +172,7 @@ border-bottom: 4px solid var(--primary-color);;
 
 .LED, .Calculator, .Pastel, .Run {
    
-    display: block;
+  display: block;
   position: relative;
   margin: 1%; 
   height: 20%;
@@ -230,12 +234,19 @@ border-bottom: 4px solid var(--primary-color);;
 
   /* Text boxes in Main boxes */
 
-  .Surf-Box, .LED-Box, .Calculator-Box, .Pastel-Box, .Run-Box {
-position: absolute;
-top: 85%
-
+  .LED-Box, .Calculator-Box, .Pastel-Box, .Run-Box {
+  position: absolute;
+  background-color: tomato;
+  padding: 5px;
+  top: 50%
   }
 
+  .Surf-Box {
+    position: absolute;
+    background-color: tomato;
+    padding: 5px;
+    top: 80%
+  }
 
   /* Footer */
   footer {
